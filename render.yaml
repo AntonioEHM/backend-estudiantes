@@ -5,7 +5,10 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: node app.js
-    nodeVersion: 18
+    build:
+      envVars:
+        - key: NODE_VERSION
+          value: 18
     envVars:
       - key: PORT
         value: 10000
