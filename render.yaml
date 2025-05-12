@@ -5,6 +5,7 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: node app.js
+    nodeVersion: 18
     envVars:
       - key: PORT
         value: 10000
@@ -12,4 +13,3 @@ services:
         value: miclavejwt
       - key: MONGODB_URI
         value: mongodb+srv://kamus:UXYyHLbj8bhw4Cqi@cluster0.n7ejhiz.mongodb.net/estudiantesDB?retryWrites=true&w=majority&appName=Cluster0
-    nodeVersion: 18
